@@ -1,23 +1,23 @@
 ###### Description ##########
-# This script can create synthetic speech based a list of sentences
+# This script can create synthetic speech based on a list of sentences
 # and then save the generated speech and TextGrid files in a directory
 # you can select whether you want the American or British version
 
-# what are required: a .txt file with sentences, and an output directory
-# The .txt can include ssml (speech synthesis markup language) markers for further manipulations
-# the settings for output pitch range are '44100, 0.01, 1, 0, 175, "IPA"', change this in the script if you need to
-###### Buhan 29th Nov 2023 ######
+# Things required: a .txt file with sentences, and an output directory
+# The .txt can include SSML (speech synthesis markup language) markers for further manipulations
+# The settings for output pitch range are '44100, 0.01, 1, 0, 175, "IPA"', change this in the script if you need to
+###### Buhan Guo 29th Nov 2023 ######
 
 
-### Define input and ouput paths ###
+### Define input and output paths ###
 
 form Give the working directories
 
 comment Give the directory for the txt file containing sentences
-text input_dir /Users/guobubu/Desktop/PhD_Psycholinguistics/Project/RC_CC_Com/CCRC_Stimuli/robots/praat/sentences.txt
+text input_dir /Users/Desktop/praat/sentences.txt
 
 comment Give the output directory (include final /)
-text output_dir /Users/guobubu/Desktop/PhD_Psycholinguistics/Project/RC_CC_Com/CCRC_Stimuli/robots/praat/exp_sounds/
+text output_dir /Users/Desktop/praat/robot_sounds/
 
 comment Choose the English accent:
 	optionmenu accent 1 
@@ -43,12 +43,12 @@ n_sentences = Get number of strings
 
 # Loop through each line and generate speech
 for line from 1 to n_sentences
-    
+
 	# Get the current line's text
 	selectObject: sent_files
     currentText$ = Get string: line
 
-    # Generate speech (using a simple text-to-speech algorithm in Praat)
+    # Generate speech
 	Create SpeechSynthesizer: language$, "Female1"
 	Speech output settings: 44100, 0.01, 1, 0, 175, "IPA"
 	To Sound: currentText$, "yes"
@@ -64,7 +64,6 @@ for line from 1 to n_sentences
 	select all 
 	minus Strings sentences
 	synthesizerName$ = "SpeechSynthesizer English__" + language_tag$ + "__Female1"
-	# minus SpeechSynthesizer "English__" + language_tag$ + "__Female1"
 	minusObject: synthesizerName$
 	Remove
 
