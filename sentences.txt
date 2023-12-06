@@ -1,5 +1,5 @@
 The dog barked loudly at the mailman.
-A red ball rolled down the hill.
+A pink ball rolled down the hill.
 The sun set behind the mountains.
 A small bird sang in the tree.
 A <prosody rate="slow"> green frog </prosody> jumped into the pond.
