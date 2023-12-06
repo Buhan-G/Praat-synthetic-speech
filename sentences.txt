@@ -1,0 +1,8 @@
+The dog barked loudly at the mailman.
+A red ball rolled down the hill.
+The sun set behind the mountains.
+A small bird sang in the tree.
+A <prosody rate="slow"> green frog </prosody> jumped into the pond.
+Leaves <prosody rate="slow"> fell </prosody> from the trees in autumn.
+A boat <prosody pitch="high"> floated </prosody> on the blue lake.
+The <prosody pitch="high"> clock </prosody> ticked in the quiet room.
