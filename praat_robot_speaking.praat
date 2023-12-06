@@ -1,7 +1,7 @@
 ###### Description ##########
 # This script can create synthetic speech based on a list of sentences
 # and then save the generated speech and TextGrid files in a directory
-# you can select whether you want the American or British version
+# You can select whether you want the American or British version
 
 # Things required: a .txt file with sentences, and an output directory
 # The .txt can include SSML (speech synthesis markup language) markers for further manipulations
