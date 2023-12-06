@@ -1,4 +1,4 @@
-# Praat-synthetic-speech
+# Praat-synthetic-speech-generator
 This script can create synthetic speech based on a list of sentences in a .txt file
 and then save the generated speech and TextGrid files in a directory.
 You can select whether you want the American or British accent.
