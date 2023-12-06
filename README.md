@@ -9,3 +9,5 @@ The .txt can include SSML (speech synthesis markup language) markers;
 The default settings for output pitch range in this script are '44100, 0.01, 1, 0, 175, "IPA"';
 Such settings generate real robotic-like speech as pitch range is strictly controlled;
 Deleting this line will allow back to Praat default pitch range setting.
+
+The Sentences.txt file can be used as an example for testing.
